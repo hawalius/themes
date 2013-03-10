@@ -1,5 +1,8 @@
+{% set blog_info = getBlogInfo() %}
+{% set blog_name = blog_info.name %}
+{% set asset_url = getAssetUrl() %}
 <!doctype html>
-<htm>
+<html>
 <head>
 	<title>{{ blog_name }}</title>
 	<meta charset="utf8" />
@@ -21,14 +24,14 @@
 		<h1 id="logo"><a href="/">{{ blog_name }}</a></h1>
 		<nav>
 			<ul>
-				<li><a href="/">Home</li>
+				<li><a href="/">Home</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<div id="content">
-		{% block content %}
-		{% endblock %}
+			{% block content %}
+			{% endblock %}
 		</div>
 	</main>
 	<footer>
