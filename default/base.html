@@ -1,10 +1,11 @@
 {% set blog_info = getBlogInfo() %}
 {% set blog_name = blog_info.name %}
+{% set blog_slogan = blog_info.slogan %}
 {% set asset_url = getAssetUrl() %}
 <!doctype html>
 <html>
 <head>
-	<title>{{ blog_name }}</title>
+	<title>{{ blog_name }}{% if prefix %} - {{ prefix }} {% endif %}</title>
 	<meta charset="utf8" />
 	<link href="{{ asset_url }}/css/normalize.css" rel="stylesheet" />
 	<link href="{{ asset_url }}/css/style.css" rel="stylesheet" />
@@ -20,13 +21,9 @@
 </head>
 <body>
 <div id="wrapper">
-	<header>
+	<header id="top">
 		<h1 id="logo"><a href="/">{{ blog_name }}</a></h1>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-			</ul>
-		</nav>
+		<span class="slogan">{{ blog_slogan }}
 	</header>
 	<main>
 		<div id="content">
@@ -34,7 +31,7 @@
 			{% endblock %}
 		</div>
 	</main>
-	<footer>
+	<footer id="bottom">
 		<p>Powered by <a href="http://github.com/hawalius/hawalius">Hawalius</a></p>
 	</footer>
 </div>

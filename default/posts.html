@@ -1,4 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>lol</h1>
+<div id="posts">
+	{% for post in posts %}
+		<article>
+			<header>
+				<h2><a href="{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
+			</header>
+			<div class="post_content">{{ post.content|raw }}</div>
+			<footer>Written by {{ post.author }} on {{ date.time|date('d/m/Y H:i') }}</footer>
+		</article>
+	{% else %}
+		<p>This blog is empty.</p>
+	{% endfor %}
+</div>
 {% endblock %}

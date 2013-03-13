@@ -1,0 +1,82 @@
+body {
+	font: 16px/26px "Helvetica Neue", sans-serif;
+	background: #fff;
+	color: #444;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+#wrapper {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+#top {
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+#top .slogan {
+	font-style: italic;
+}
+#top h1 a {
+	color: #181818;
+	text-decoration: none;
+}
+#content {
+	width: 700px;
+}
+#top, #content, #bottom {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+article {
+	margin: 0 0 3em 0;
+}
+article header h2 a {
+	color: #181818;
+	text-decoration: none;
+}
+article header h2 a.external {
+	border-bottom: 1px solid #CCC;
+}
+article footer {
+	font-weight: italic;
+}
+/* Typography (from Skeleton) */
+h1, h2, h3, h4, h5, h6 {
+	color: #181818;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	font-weight: inherit;
+}
+h1 {
+	font-size: 46px;
+	line-height: 50px;
+	margin-bottom: 14px;
+}
+h2 {
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 28px;
+	line-height: 34px;
+	margin-bottom: 8px;
+}
+h4 {
+	font-size: 21px;
+	line-height: 30px;
+	margin-bottom: 4px;
+}
+h5 {
+	font-size: 17px;
+	line-height: 24px;
+}
+h6 {
+	font-size: 14px;
+	line-height: 21px;
+}
+p {
+	margin: 0 0 20px 0;
+}
