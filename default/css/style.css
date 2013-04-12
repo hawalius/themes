@@ -40,7 +40,10 @@ article header h2 a.external {
 	border-bottom: 1px solid #CCC;
 }
 article footer {
-	font-weight: italic;
+	font-style: italic;
+}
+#bottom {
+	font-size: small;
 }
 /* Typography (from Skeleton) */
 h1, h2, h3, h4, h5, h6 {
