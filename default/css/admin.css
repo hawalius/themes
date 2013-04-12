@@ -4,6 +4,16 @@
 	min-width: 300px;
 	margin: 0 auto;
 }
+#top {
+	font-size: small;
+}
+ul {
+	list-style-type: none;
+}
+ul li h2 a {
+	color: #181818;
+	text-decoration: none;
+}
 input[type="button"], input[type="submit"] {
 	border: 0;
 	background: #000;
