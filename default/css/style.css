@@ -45,6 +45,12 @@ article footer {
 #bottom {
 	font-size: small;
 }
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+}
 /* Typography (from Skeleton) */
 h1, h2, h3, h4, h5, h6 {
 	color: #181818;
