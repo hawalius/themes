@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			basePath: '/themes/default/epiceditor',
 			theme: {
 				base: '/themes/base/epiceditor.css',
-				preview: '/themes/preview/github.css',
-				editor: '/themes/editor/hawalius.css'
+				preview: '/../css/style.css',
+				editor: '/themes/editor/hawalius.css?a'
 			},
 			file: {
 				defaultContent: el[0].textContent
