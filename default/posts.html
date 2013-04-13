@@ -4,9 +4,9 @@
 	{% for post in posts %}
 		<article>
 			<header>
-				<h2><a href="{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
+				<h2><a href="/post/view/{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
 			</header>
-			<div class="post_content">{{ post.content|raw }}</div>
+			<div class="post_content">{{ post.content|markdown|raw }}</div>
 			<footer>Written by {{ post.author }} on {{ date.time|date('d/m/Y H:i') }}</footer>
 		</article>
 	{% else %}
