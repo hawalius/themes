@@ -6,7 +6,7 @@
 		<header>
 			<h2>{{ post.title }}</h2>
 		</header>
-		<div class="post_content">{{ post.content|markdown|raw }}</div>
+		{{ post.content|markdown|raw }}
 		<footer>Written by {{ post.author }} on {{ date.time|date('d/m/Y H:i') }}</footer>
 	</article>
 	{% else %}
