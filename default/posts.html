@@ -2,7 +2,7 @@
 {% block content %}
 <div id="posts">
 	{% for post in posts %}
-		{% set post = hook('show_post', post) %}
+		{% set post = hook('show_post', post)|raw %}
 		<article>
 			<header>
 				<h2><a href="/post/view/{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
