@@ -8,7 +8,7 @@
 				<h2><a href="/post/{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
 			</header>
 			{{ post.content|markdown|raw }}
-			<footer>Written by {{ post.author }} on {{ date.time|date('d/m/Y H:i') }}</footer>
+			<footer>Written by {{ post.author }} on {{ post.time|date('d/m/Y H:i') }}</footer>
 		</article>
 	{% else %}
 		<p>This blog is empty.</p>
