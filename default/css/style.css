@@ -98,3 +98,7 @@ blockquote {
 blockquote p {
 	font-weight: 300;
 }
+/* Youtube */
+.youtube_video{
+	margin: .5em 0 1em;
+}
