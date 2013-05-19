@@ -5,7 +5,7 @@
 		{% set post = hook('show_post', post)|raw %}
 		<article>
 			<header>
-				<h2><a href="/post/{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
+				<h2><a href="{% if not isExternal(post.url) %}/post/{% endif %}{{ post.url }}" {% if isExternal(post.url) %} class="external" {% endif %}>{{ post.title }}</a></h2>
 			</header>
 			{{ post.content|markdown|raw }}
 			<footer>Written by {{ post.author }} on {{ post.time|date('d/m/Y H:i') }}</footer>
